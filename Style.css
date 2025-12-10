@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #7cf03d;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #7cf03d, #7cf03d);
+  padding: 30px 20px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  color: #222;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* Image Styling */
+.hero-image {
+  flex: 1;
+  text-align: right;
+  margin-top: -100px; /* moves the image up */
+  margin-bottom: -40px;
+}
+
+.hero-image img {
+  width: 180px;  
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+
+.about, .projects, .contact {
+  padding: 40px 0;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.project-card a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  header .container, nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+}
