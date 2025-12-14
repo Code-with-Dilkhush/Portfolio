@@ -107,14 +107,12 @@ nav ul li a:hover {
   transition: transform 0.3s ease;
 }
 
-
 .hero-image img:hover {
   transform: scale(1.05);
 }
 
-
 .about, .projects, .contact {
-  padding: 40px 0;
+  padding: 50px 10;
 }
 
 .project-card {
@@ -126,6 +124,31 @@ nav ul li a:hover {
 }
 
 .project-card a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.project-card1 {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.project-card1 a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.internship-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.internship-card a {
   color: #4CAF50;
   text-decoration: none;
 }
